@@ -1,5 +1,15 @@
-const repeatString = function() {
+const repeatString = function(string, number) {
+    let word = '';
+    if (number < 0) {
+        return 'ERROR';
+    } 
 
-}
+    let positiveNumber = number;
 
-module.exports = repeatString
+    for (i = 0; i < positiveNumber; i++) {
+        word += string;
+    }
+    return word;
+};
+
+module.exports = repeatString;
